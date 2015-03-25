@@ -173,7 +173,7 @@ class subtitles_adder(devede_executor.executor):
 			print "FPS sub 2 original"
 
 		fichero.write('\n\t\tsubtitle-fps="'+fps_out_subs+'"')
-		fichero.write('\n\t\tvertical-alignment="bottom" />')
+		fichero.write('\n\t\tvertical-alignment="%s" />' % videofile["sub_position"])
 		fichero.write("\n\t</stream>\n</subpictures>")
 		fichero.close()
 		
